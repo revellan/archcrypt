@@ -8,7 +8,7 @@ In order to install this tool, you have to be on archlinux, the official iso wil
 sudo -s
 git clone https://github.com/revellan/archcrypt /opt/archcrypt
 cd /opt/archcrypt
-./INSTALL.sh
+./INSTALLER.sh
 
 Then you can start using it with:
 
