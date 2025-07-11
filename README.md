@@ -13,7 +13,8 @@ Then you can start using it with:
 
 archcrypt -h
 
-* DEFAULT CREDENTIALS
+DEFAULT CREDENTIALS
+------------------
 for the user you created with -u:
 ```
 pass
