@@ -8,7 +8,7 @@
 sudo -s;
 git clone https://github.com/revellan/archcrypt /opt/archcrypt;
 cd /opt/archcrypt;
-./INSTALLER.sh;
+sh INSTALLER.sh;
 
 #Then you can start using it with:
 
