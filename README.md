@@ -14,7 +14,11 @@ Then you can start using it with:
 archcrypt -h
 
 * DEFAULT CREDENTIALS
-for the user you created with -u :
+for the user you created with -u:
+```
 pass
+```
 for root:
+```
 root
+```
