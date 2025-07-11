@@ -1,0 +1,13 @@
+In order for this script to run properly, Arch Linux has to be installed. Any unusual partition names. Only /dev/[dev-name]1 and /dev/[nvme0n<number>]p1 are allowed. if the partition name is any more than a number (nvme is an exception), the program will fail without stopping.
+
+This program was NOT developed for Beginners, it is simply automizing an encrypted Arch Linux Installation. If you are a Beginner to this Operating System, use the archinstall program, not ArchInstall!
+
+The executable file will be executed while being chrooted into the newsystem as the created user.
+
+The mountpoint used for the new system is /mnt/newsystem, and can only be changed by editing the mountPoint variable that is declared on line 7. in main.py
+
+The following dependencies are needed to run the program:
+arch-install-scripts parted awk grep cut tee bash gnupg cryptsetup lvm2 mkinitcpio
+
+!!! Make sure the disk you specified with -d is unused!. If not the program will fail without ERROR code! !!!
+This program has countless of unhandled exceptions, so if it is used wrong it may destroy you're system. Also there will be no confirmation about the disk, it will be erased almost immediately after the start of the Program!
