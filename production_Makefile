@@ -1,0 +1,16 @@
+# PRODUCTION MAKEFILE
+
+archcrypt:
+	@cargo build --release
+
+install: archcrypt
+	@if [ "$(shell whoami)" != "root" ]; then \
+		echo "You must be root to install this package!"; \
+		exit 1; \
+	fi
+	@install -Dm755 target/release/archcrypt /usr/local/bin/archcrypt
+	@echo "Installed to /usr/local/bin/archcrypt"
+
+clean:
+	@cargo clean
+
