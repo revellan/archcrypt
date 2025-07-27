@@ -1,6 +1,7 @@
-# archcrypt
+## archcrypt
+# An alternative to archinstall, that encrypts the installation by default with luks. 
 
-Alternative to archinstall, that uses luks encryption by default.
+It is a follow up to [archcrypt_py](https://github.com/revellan/archcrypt_py) written in rust with major improvements.
 
 ## Installation:
 ```sh
