@@ -6,7 +6,7 @@ It is a follow up to [archcrypt_py](https://github.com/revellan/archcrypt_py) wr
 ## Installation:
 ```sh
 #Clone the git repo
-sudo git clone https://github.com/revellan/archcrypt
+git clone https://github.com/revellan/archcrypt
 cd archcrypt
 
 #build from source
