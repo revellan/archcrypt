@@ -1,3 +1,3 @@
-pub fn gpt() {
+pub fn _gpt() {
     
 }

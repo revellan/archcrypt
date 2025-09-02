@@ -1,3 +1,4 @@
+use archcrypt::install;
 fn main() {
-    archcrypt::partitioner::gpt();
+    install();
 }

@@ -5,3 +5,12 @@ version = 4
 [[package]]
 name = "archcrypt"
 version = "0.1.0"
+dependencies = [
+ "revparse",
+]
+
+[[package]]
+name = "revparse"
+version = "1.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "647e38e725afcd90fe0526f62d8e1b39230c4d0be44fdc32b45ea6be20406f4b"
