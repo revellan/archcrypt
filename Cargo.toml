@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-revparse = "1.2.2"
+revparse = "1.2.8"

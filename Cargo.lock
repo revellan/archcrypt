@@ -11,6 +11,6 @@ dependencies = [
 
 [[package]]
 name = "revparse"
-version = "1.2.2"
+version = "1.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "647e38e725afcd90fe0526f62d8e1b39230c4d0be44fdc32b45ea6be20406f4b"
+checksum = "338977e5d278dd8a5b8f5b7a8f97e58152e2cb0a26bff04eef708a9f3293ad12"
