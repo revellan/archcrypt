@@ -75,10 +75,15 @@ pub fn parse() -> Config {
         "mountpoint to use during the installation process",
         Some("MOUNTPOINT"),
     );
-    parser.add_pos_arg("DISK");
+    parser.add_pos_arg("DISK", true);
     parser.pos_arg_help("DISK to install the Operating System on.");
     parser.run();
+    let mut pos_args = parser.get_pos_args();
+    if pos_args.len() != 1 {
+        panic!("{}", PARSING_ERROR);
+    }
     let config: Config = Config {
+        disk: pos_args.pop().unwrap(),
         encrypt: match parser.get(ENCRYPT) {
             ArgState::False => true,
             ArgState::True => false,
@@ -91,6 +96,8 @@ pub fn parse() -> Config {
         hostname: parseopt(&mut parser, HOSTNAME),
         username: parseopt(&mut parser, USERNAME),
         mountpoint: parseopt(&mut parser, MOUNTPOINT),
+        lvm: None,
+        luks_password: None,
     };
     config
 }

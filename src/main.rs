@@ -1,4 +1,6 @@
-use archcrypt::install;
+use archcrypt::Config;
 fn main() {
-    install();
+    let mut conf: Config = archcrypt::parse();
+    conf.install();
 }
+
